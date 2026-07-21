@@ -10,3 +10,13 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --prime-color: #2FB297;
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #35404E;
+}
+
+body{
+    overflow-x: hidden;
+}
