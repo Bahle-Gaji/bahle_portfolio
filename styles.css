@@ -55,4 +55,12 @@ nav {
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--black-color);
+} 
+
+.menu li a:hover{
+    color: var(--prime-color);
+}
+
+.bars{
+    display: none;
 }
