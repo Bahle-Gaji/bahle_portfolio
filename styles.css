@@ -16,7 +16,7 @@
     --white-color: #fff;
     --text-color: #35404E;
     --para-color: #2a2a2a;
-    --transition: .3s;
+    --transition: all .3s ease;
     --transition2: .6s;
 }
 
@@ -59,7 +59,7 @@ nav {
     font-weight: 500;
     color: var(--black-color);
     transition: var(--transition);
-    padding: 10px;
+    padding: 5px;
 } 
 
 .menu li a:hover{
@@ -131,6 +131,7 @@ button{
     background-color: var(--prime-color);
     color: var(--white-color);
     font-size: 1.1rem;
+    transition: var(--transition);
 }
 
 button:hover{
@@ -138,7 +139,6 @@ button:hover{
     background-color: #fdf6f6;
     color: var(--para-color);
     cursor: pointer;
-    transition: var(--transition);
 }
 
 .hero_content button{
