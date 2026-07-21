@@ -15,6 +15,8 @@
     --black-color: #000;
     --white-color: #fff;
     --text-color: #35404E;
+    --transition: .3s;
+    --transition2: .6s;
 }
 
 body{
@@ -22,10 +24,10 @@ body{
 }
 
 header{
-    background-image: url(Images/hero-bg-fernando-hernandes.jpg);
+    background-image: url(Images/hero-bg3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center ;
     width: 100%;
     height: 100vh;
 }
@@ -55,6 +57,7 @@ nav {
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--black-color);
+    transition: var(--transition);
 } 
 
 .menu li a:hover{
@@ -62,5 +65,5 @@ nav {
 }
 
 .bars{
-    display: none;
+    /* display: none; */
 }
