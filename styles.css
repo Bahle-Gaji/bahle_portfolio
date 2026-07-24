@@ -23,6 +23,13 @@
 body{
     overflow-x: hidden;
 }
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 12%;
+}
 
 header{
     background-image: url(Images/hero-bg1.png);
