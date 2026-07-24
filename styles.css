@@ -133,7 +133,7 @@ nav {
     font-weight: 600;
 }
 
-.hero_content p {
+.hero_content p, .about_content p {
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--para-color);
@@ -180,4 +180,24 @@ button:hover {
     width: 480px;
     height: 480px;
     object-fit: cover;
+}
+
+.about_content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.about_content button{
+    margin: 10px 0;
+    width: 160px;
+    background-color: var(--white-color);
+    border: 1px solid var(--prime-color);
+    color: var(--prime-color);
+}
+
+.about_content button:hover {
+    cursor: pointer;
+    background-color: var(--prime-color);
+    color: var(--white-color);
 }
