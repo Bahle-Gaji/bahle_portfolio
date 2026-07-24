@@ -57,6 +57,26 @@ nav {
     align-items: center;
     padding: 0 12%;
 }
+button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--prime-color);
+    color: var(--white-color);
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+button:hover {
+    box-shadow: 0 0 10px #3b3b3b9c;
+    background-color: #fdf6f6;
+    color: var(--para-color);
+    cursor: pointer;
+}
+
+
+/* HEADER SECTION */
 
 .logo a {
     font-size: 2rem;
@@ -139,29 +159,19 @@ nav {
     color: var(--para-color);
 }
 
-button {
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--prime-color);
-    color: var(--white-color);
-    font-size: 1.1rem;
-    transition: var(--transition);
-}
-
-button:hover {
-    box-shadow: 0 0 10px #3b3b3b9c;
-    background-color: #fdf6f6;
-    color: var(--para-color);
-    cursor: pointer;
-}
 
 .hero_content button {
     margin: 10px 0;
 }
+.hero_content button a{
+    color: var(--white-color);
+}
+.hero_content button a:hover{
+    color: var(--prime-color)
+}
 
-/* About Section */
+
+/* ABOUT SECTION*/
 
 .about {
     gap: 50px;
