@@ -10,10 +10,10 @@ var typed = new Typed("#text", {
 let nav = document.querySelector("nav");
 
 window.addEventListener('scroll', () => {
-    if(window.scroll > 100){
+    if(window.scrollY > 100){
         nav.classList.add("sticky_nav");
     }
     else{
         nav.classList.remove("sticky_nav");
     }
-})
+});
