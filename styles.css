@@ -17,7 +17,7 @@
     --text-color: #35404E;
     --para-color: #2a2a2a;
     --transition: all .3s ease;
-    --transition2: .6s;
+    --transition2: all .6s ease;
 }
 
 body {
@@ -50,13 +50,34 @@ header {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 12%;
+    z-index: 999;
 }
+.sticky_nav{
+    
+    width: 100%;
+    height: 100px;
+    background-color: var(--white-color);
+    transition: var(--transition2);
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: anim_up .6s forwards linear;
+}
+@keyframes anim_up{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 button {
     width: 150px;
     height: 40px;
