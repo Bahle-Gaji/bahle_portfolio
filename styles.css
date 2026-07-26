@@ -211,6 +211,8 @@ button:hover {
     width: 480px;
     height: 480px;
     object-fit: cover;
+    box-shadow: 0 0 10px var(--para-color);
+    border-radius: 20px;
 }
 
 .about_content h1{
