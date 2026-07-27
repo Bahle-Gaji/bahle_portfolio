@@ -239,6 +239,7 @@ button:hover {
 
 .services{
     flex-direction: column;
+    background-color: #F6F7FC;
 }
 
 .headings{
@@ -276,9 +277,15 @@ button:hover {
     gap: 20px;
 }
 
+.service_card:hover i{
+    background-color: var(--prime-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
 .service_card i{
     flex-shrink: 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -286,6 +293,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     border: 2px solid var(--prime-color);
+    color: var(--prime-color);
 }
 .service_card_det{
     display: flex;
@@ -293,4 +301,9 @@ button:hover {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 5px;
+}
+
+.service_card_det h2{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
