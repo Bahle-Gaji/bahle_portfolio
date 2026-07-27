@@ -237,10 +237,21 @@ button:hover {
 
 /* SERVICES SECTION */
 
-.services {
-    
+.services{
+    flex-direction: column;
 }
 
-.service_card{
-   
+.headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.services_cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
