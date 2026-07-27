@@ -30,7 +30,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 5% 12%;
-    scroll-margin-top: 50px; /*Leaves space for heading */
+    scroll-margin-top: 50px;
+    /*Leaves space for heading */
 }
 
 img {
@@ -62,8 +63,9 @@ nav {
     padding: 0 12%;
     z-index: 999;
 }
-.sticky_nav{
-    
+
+.sticky_nav {
+
     width: 100%;
     height: 100px;
     background-color: var(--white-color);
@@ -72,8 +74,9 @@ nav {
     opacity: 0;
     animation: anim_up .6s forwards linear;
 }
-@keyframes anim_up{
-    100%{
+
+@keyframes anim_up {
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -175,7 +178,8 @@ button:hover {
     font-weight: 600;
 }
 
-.hero_content p, .about_content p {
+.hero_content p,
+.about_content p {
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--para-color);
@@ -185,10 +189,12 @@ button:hover {
 .hero_content button {
     margin: 10px 0;
 }
-.hero_content button a{
+
+.hero_content button a {
     color: var(--white-color);
 }
-.hero_content button a:hover{
+
+.hero_content button a:hover {
     color: var(--prime-color)
 }
 
@@ -208,7 +214,7 @@ button:hover {
     gap: 10px;
 }
 
-.about_img img{
+.about_img img {
     width: auto;
     height: 480px;
     object-fit: contain;
@@ -216,13 +222,13 @@ button:hover {
     border-radius: 50px;
 }
 
-.about_content h1{
+.about_content h1 {
     font-size: 3rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
-.about_content button{
+.about_content button {
     margin: 10px 0;
     width: 160px;
     background-color: var(--white-color);
@@ -238,12 +244,12 @@ button:hover {
 
 /* SERVICES SECTION */
 
-.services{
+.services {
     flex-direction: column;
     background-color: #F6F7FC;
 }
 
-.headings{
+.headings {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,39 +258,40 @@ button:hover {
     gap: 5px;
 }
 
-.headings h1{
+.headings h1 {
     font-size: 3rem;
     font-weight: 600;
     color: var(--para-color);
 }
 
-.headings p{
+.headings p {
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--text-color);
 }
-.services_cards{
+
+.services_cards {
     margin-top: 50px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.service_card{
+.service_card {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.service_card:hover i{
+.service_card:hover i {
     background-color: var(--prime-color);
     color: var(--white-color);
     cursor: pointer;
 }
 
-.service_card i{
+.service_card i {
     flex-shrink: 0;
     font-size: 2.2rem;
     width: 80px;
@@ -296,7 +303,8 @@ button:hover {
     border: 2px solid var(--prime-color);
     color: var(--prime-color);
 }
-.service_card_det{
+
+.service_card_det {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -304,7 +312,39 @@ button:hover {
     gap: 5px;
 }
 
-.service_card_det h2{
+.service_card_det h2 {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.portfolio_images {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.portfolio_img{
+    position: relative;
+    /* aspect-ratio: 16/10; */
+    /* object-fit: contain; */
+    /* width: 100%; */
+}
+
+.portfolio_img:after{
+    content: "Multi Images";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 209, 180, 0.6);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white-color)
 }
