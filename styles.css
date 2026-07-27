@@ -208,12 +208,12 @@ button:hover {
     gap: 10px;
 }
 
-.about_img {
-    width: 480px;
+.about_img img{
+    width: auto;
     height: 480px;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 0 0 10px var(--para-color);
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .about_content h1{
