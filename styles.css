@@ -249,9 +249,48 @@ button:hover {
     text-align: center;
     gap: 5px;
 }
+
+.headings h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--para-color);
+}
+
+.headings p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
 .services_cards{
+    margin-top: 50px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+}
+
+.service_card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.service_card i{
+    flex-shrink: 0;
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--prime-color);
+}
+.service_card_det{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
 }
