@@ -30,6 +30,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 5% 12%;
+    scroll-margin-top: 50px; /*Leaves space for heading */
 }
 
 img {
