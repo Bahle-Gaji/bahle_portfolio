@@ -156,7 +156,7 @@ section {
 
 .hero_content {
     width: 60%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,7 +167,7 @@ section {
 
 .hero_content h2 {
     color: var(--prime-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500
 }
 
@@ -262,6 +262,11 @@ section {
     color: var(--para-color);
 }
 
+.headings h2{
+    color: var(--prime-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 .headings p {
     font-size: 1.1rem;
     font-weight: 500;
@@ -338,10 +343,7 @@ section {
 
 .portfolio_img{
     position: relative;
-    /* overflow: hidden; */
-    /* aspect-ratio: 16/10; */
-    /* object-fit: contain; */
-    /* width: 100%; */
+    overflow: hidden;
 }
 
 .portfolio_img::after{
@@ -367,7 +369,7 @@ section {
 }
 
 .portfolio1::after{
-    content: "GitHub";
+    content: "GitHub Page";
 }
 .portfolio2::after{
     content: "Client BnB Website ";
