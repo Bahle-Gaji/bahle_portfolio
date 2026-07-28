@@ -96,7 +96,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 5% 12%;
-    scroll-margin-top: 50px; /*Leaves space for heading */
+    scroll-margin-top: 50px;
+    /*Leaves space for heading */
 }
 
 /* HEADER SECTION */
@@ -262,11 +263,12 @@ section {
     color: var(--para-color);
 }
 
-.headings h2{
+.headings h2 {
     color: var(--prime-color);
     font-size: 1.2rem;
     font-weight: 500;
 }
+
 .headings p {
     font-size: 1.1rem;
     font-weight: 500;
@@ -323,12 +325,12 @@ section {
 
 /* PORTFOLIO SECTION */
 
-.portfolio{
+.portfolio {
     flex-direction: column;
     gap: 50px;
 }
 
-.portfolio_container{
+.portfolio_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,16 +339,16 @@ section {
 
 .portfolio_images {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.portfolio_img{
+.portfolio_img {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio_img::after{
+.portfolio_img::after {
     content: "Multi Images";
     position: absolute;
     top: 50%;
@@ -368,18 +370,73 @@ section {
     transition: var(--transition2);
 }
 
-.portfolio1::after{
+.portfolio1::after {
     content: "GitHub Page";
 }
-.portfolio2::after{
+
+.portfolio2::after {
     content: "Client BnB Website ";
 }
-.portfolio3::after{
+
+.portfolio3::after {
     content: "Simple Cafe Menu";
 }
 
-.portfolio_img:hover::after{
+.portfolio_img:hover::after {
     width: 100%;
     height: 100%;
     opacity: 1;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact_inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(131, 131, 131, 0.5);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 5%;
+    font-size: 1.2rem;
+    color: var(--para-color);
+
+    &::placeholder {
+        color: #999;
+    }
+
+}
+
+textarea {
+    width: 50%;
+    height: 170px;
+    background-color: transparent;
+    border: 1px solid rgba(131, 131, 131, 0.5);
+    border-radius: 10px;
+    outline: none;
+    padding: 5%;
+    font-size: 1.2rem;
+
 }
