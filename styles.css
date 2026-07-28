@@ -490,3 +490,52 @@ textarea:focus{
     font-size: 500;
     color: var(--para-color);
 }
+
+/* FOOTER SECTION */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 12%;
+    scroll-margin-top: 50px;
+    background-color: var(--para-color);
+}
+
+footer p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+footer p span{
+    font-weight: 600;
+    transition: var(--transition);
+}
+footer p span:hover{
+    color: var(--prime-color);
+    cursor: pointer;
+}
+.footer_socials{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_socials i{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prime-color);
+    color: var(--white-color);
+    transition: var(--transition)
+}
+
+.footer_socials i:hover{
+    background-color: var(--white-color);
+    color: var(--prime-color);
+    cursor: pointer;
+}
