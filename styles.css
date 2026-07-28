@@ -85,8 +85,8 @@ button {
 
 button:hover {
     box-shadow: 0 0 10px #3b3b3b9c;
-    background-color: #fdf6f6;
-    color: var(--para-color);
+    /* background-color: #fdf6f6; */
+    /* color: var(--para-color); */
     cursor: pointer;
 }
 
@@ -394,6 +394,7 @@ section {
 .contact {
     flex-direction: column;
     gap: 50px;
+    background-color: #F6F7FC;
 }
 
 .contact_inputs {
@@ -450,4 +451,8 @@ textarea {
 textarea:hover, 
 textarea:focus{
     border: 2px solid var(--prime-color);
+}
+
+.contact_btn button{
+    width: 200px;
 }
