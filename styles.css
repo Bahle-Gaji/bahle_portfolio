@@ -456,3 +456,37 @@ textarea:focus{
 .contact_btn button{
     width: 200px;
 }
+
+.address_det{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+}
+
+.address_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.address_box  i{
+    font-size: 2rem;
+    color: var(--prime-color);
+    margin: 10px 0;
+}
+
+.address_box h2{
+    font-weight: 500;
+    color: var(--prime-color);
+}
+
+.address_box p{
+    font-size: 500;
+    color: var(--para-color);
+}
