@@ -431,8 +431,8 @@ input {
 
 }
 
-input:hover, 
-input:focus{
+input:hover,
+input:focus {
     border: 2px solid var(--prime-color);
 }
 
@@ -448,25 +448,25 @@ textarea {
 
 }
 
-textarea:hover, 
-textarea:focus{
+textarea:hover,
+textarea:focus {
     border: 2px solid var(--prime-color);
 }
 
-.contact_btn button{
+.contact_btn button {
     width: 200px;
 }
 
-.address_det{
+.address_det {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-content: center;
     place-items: center;
     gap: 20px;
 }
 
-.address_box{
+.address_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,24 +475,26 @@ textarea:focus{
     gap: 5px;
 }
 
-.address_box  i{
+.address_box i {
     font-size: 2rem;
     color: var(--prime-color);
     margin: 10px 0;
 }
 
-.address_box h2{
+.address_box h2 {
     font-weight: 500;
     color: var(--prime-color);
 }
 
-.address_box p{
+.address_box p {
     font-size: 500;
     color: var(--para-color);
 }
 
+
 /* FOOTER SECTION */
-footer{
+
+footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -502,30 +504,33 @@ footer{
     background-color: var(--para-color);
 }
 
-footer p{
+footer p {
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--white-color);
 }
 
-footer p span{
+footer p span {
     font-weight: 600;
     transition: var(--transition);
 }
-footer p span:hover{
+
+footer p span:hover {
     color: var(--prime-color);
     cursor: pointer;
 }
-.footer_socials{
+
+.footer_socials {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.footer_socials i{
+.footer_socials i {
     width: 40px;
     height: 40px;
-    border-radius: 100%;;
+    border-radius: 100%;
+    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -534,8 +539,173 @@ footer p span:hover{
     transition: var(--transition)
 }
 
-.footer_socials i:hover{
+.footer_socials i:hover {
     background-color: var(--white-color);
     color: var(--prime-color);
     cursor: pointer;
+}
+
+/* MEDIA QUERIES  */
+
+/* desktops */
+
+@media (max-width:1200px) {
+
+    nav {
+        padding: 0 8%;
+    }
+
+    section {
+        padding: 5% 8%;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .hero_content {
+        width: 70%;
+    }
+
+}
+
+/* tablets */
+
+@media (max-width:992px) {
+
+    .hero_content {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .services_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio_images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_inputs {
+        flex-direction: column;
+    }
+
+    .inputs,
+    textarea {
+        width: 100%;
+    }
+
+}
+
+/* smartphones */
+
+@media (max-width:768px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    section {
+        padding: 15% 5%;
+    }
+
+    .menu,
+    .social_icons {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .hero_content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero_content h1 {
+        font-size: 2rem;
+    }
+
+    .about_content h1,
+    .headings h1 {
+        font-size: 2.2rem;
+    }
+
+    .about_img img {
+        height: 350px;
+    }
+
+    .services_cards {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio_images {
+        grid-template-columns: 1fr;
+    }
+
+    .address_det {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
+
+/* Small Phones */
+
+@media (max-width:576px) {
+
+    nav {
+        height: 80px;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    .hero_content h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero_content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero_content p,
+    .about_content p,
+    .headings p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 140px;
+        font-size: 1rem;
+    }
+
+    .service_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service_card_det {
+        align-items: center;
+    }
+
 }
