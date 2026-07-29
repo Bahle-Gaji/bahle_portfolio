@@ -555,157 +555,207 @@ footer p span:hover {
         padding: 0 8%;
     }
 
-    section {
-        padding: 5% 8%;
-    }
-
-    .menu {
-        gap: 10px;
-    }
-
-    .hero_content {
-        width: 70%;
-    }
-
-}
-
-/* tablets */
-
-@media (max-width:992px) {
-
-    .hero_content {
+    header {
+        background-image: url(Images/hero-bg1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 0;
+        background-attachment: fixed;
         width: 100%;
+        height: 100vh;
+
+        section {
+            padding: 5% 8%;
+        }
+
+        .menu {
+            gap: 10px;
+        }
+
+        .hero_content {
+            width: 70%;
+        }
+
     }
 
-    .about {
-        flex-direction: column;
-        text-align: center;
+    /* tablets */
+
+    @media (max-width:992px) {
+
+        nav {
+            padding: 5% 5%;
+            /* justify-content: space-between; */
+        }
+
+        .bars {
+            display: none;
+        }
+
+        nav .social_icons {
+            display: none;
+        }
+
+        .hero_content {
+            width: 100%;
+        }
+
+        .about {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about_content {
+            width: 100%;
+            align-items: center;
+        }
+
+        .services_cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .portfolio_images {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .contact_inputs {
+            flex-direction: column;
+        }
+
+        .inputs,
+        textarea {
+            width: 100%;
+        }
+
     }
 
-    .about_content {
-        width: 100%;
-        align-items: center;
+
+    /* smartphones */
+
+    @media (max-width:768px) {
+
+        nav {
+            height: 80px;
+            padding: 0 5%;
+        }
+
+        section {
+            padding: 15% 5%;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            padding: 30px 0;
+            gap: 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition2);
+        }
+
+        .menu.active {
+            display: flex;
+            max-height: 400px;
+        }
+
+        .social_icons {
+            display: none;
+        }
+
+        .bars {
+            display: block;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .bars i {
+            transition: var(--transition);
+        }
+
+        .hero_content {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+
+        .hero_content h1 {
+            font-size: 2rem;
+        }
+
+        .about_content h1,
+        .headings h1 {
+            font-size: 2.2rem;
+        }
+
+        .about_img img {
+            height: 350px;
+        }
+
+        .services_cards {
+            grid-template-columns: 1fr;
+        }
+
+        .portfolio_images {
+            grid-template-columns: 1fr;
+        }
+
+        .address_det {
+            grid-template-columns: 1fr;
+        }
+
+        footer {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
     }
 
-    .services_cards {
-        grid-template-columns: repeat(2, 1fr);
+    /* Small Phones */
+
+    @media (max-width:576px) {
+
+        nav {
+            height: 80px;
+        }
+
+        .logo a {
+            font-size: 1.5rem;
+        }
+
+        .hero_content h1 {
+            font-size: 1.7rem;
+        }
+
+        .hero_content h2 {
+            font-size: 1.2rem;
+        }
+
+        .hero_content p,
+        .about_content p,
+        .headings p {
+            font-size: 1rem;
+        }
+
+        button {
+            width: 140px;
+            font-size: 1rem;
+        }
+
+        .service_card {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .service_card_det {
+            align-items: center;
+        }
+
     }
-
-    .portfolio_images {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact_inputs {
-        flex-direction: column;
-    }
-
-    .inputs,
-    textarea {
-        width: 100%;
-    }
-
-}
-
-/* smartphones */
-
-@media (max-width:768px) {
-
-    nav {
-        padding: 0 5%;
-    }
-
-    section {
-        padding: 15% 5%;
-    }
-
-    .menu,
-    .social_icons {
-        display: none;
-    }
-
-    .bars {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    .hero_content {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-
-    .hero_content h1 {
-        font-size: 2rem;
-    }
-
-    .about_content h1,
-    .headings h1 {
-        font-size: 2.2rem;
-    }
-
-    .about_img img {
-        height: 350px;
-    }
-
-    .services_cards {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio_images {
-        grid-template-columns: 1fr;
-    }
-
-    .address_det {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-}
-
-/* Small Phones */
-
-@media (max-width:576px) {
-
-    nav {
-        height: 80px;
-    }
-
-    .logo a {
-        font-size: 1.5rem;
-    }
-
-    .hero_content h1 {
-        font-size: 1.7rem;
-    }
-
-    .hero_content h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero_content p,
-    .about_content p,
-    .headings p {
-        font-size: 1rem;
-    }
-
-    button {
-        width: 140px;
-        font-size: 1rem;
-    }
-
-    .service_card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .service_card_det {
-        align-items: center;
-    }
-
 }
