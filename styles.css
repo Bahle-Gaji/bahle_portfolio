@@ -352,6 +352,12 @@ section {
     overflow: hidden;
 }
 
+.portfolio_img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .portfolio_img::after {
     content: "Multi Images";
     position: absolute;
