@@ -358,6 +358,7 @@ section {
     display: block;
 }
 
+
 .portfolio_img img {
     display: block;
     width: 100%;
@@ -723,19 +724,8 @@ footer p span:hover {
         grid-template-columns: 1fr;
     }
 
-    .portfolio_img img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
     .portfolio_images {
         grid-template-columns: 1fr;
-    }
-
-    .portfolio_images a {
-        display: block;
-        width: 100%;
     }
 
     .address_det {
