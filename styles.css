@@ -547,7 +547,6 @@ footer p span:hover {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -642,6 +641,11 @@ footer p span:hover {
     .inputs,
     textarea {
         width: 100%;
+    }
+
+    .footer_socials i {
+        width: 30px;
+        height: 30px;
     }
 
 }
