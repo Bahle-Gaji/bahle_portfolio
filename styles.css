@@ -55,7 +55,9 @@ nav {
     padding: 0 12%;
     z-index: 999;
 }
-nav, .hero_header{
+
+nav,
+.hero_header {
     position: relative;
     z-index: 1;
 }
@@ -352,11 +354,11 @@ section {
     overflow: hidden;
 }
 
-.portfolio_img a{
+.portfolio_img a {
     display: block;
 }
 
-.portfolio_img img{
+.portfolio_img img {
     display: block;
     width: 100%;
     height: auto;
@@ -648,7 +650,7 @@ footer p span:hover {
 
 @media (max-width:768px) {
 
-    .hero_bg{
+    .hero_bg {
         object-position: 75% center;
     }
 
@@ -721,8 +723,19 @@ footer p span:hover {
         grid-template-columns: 1fr;
     }
 
+    .portfolio_img img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
     .portfolio_images {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio_images a {
+        display: block;
+        width: 100%;
     }
 
     .address_det {
