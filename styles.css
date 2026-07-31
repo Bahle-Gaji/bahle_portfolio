@@ -352,6 +352,10 @@ section {
     overflow: hidden;
 }
 
+.portfolio_img a{
+    display: block;
+}
+
 .portfolio_img img{
     display: block;
     width: 100%;
