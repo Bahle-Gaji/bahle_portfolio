@@ -36,8 +36,8 @@ links.forEach(link => {
     link.addEventListener("click", () => {
 
         menu.classList.remove("active");
-        bars.querySelector("i").classList.toggle("ri-menu-2-line");
         bars.querySelector("i").classList.toggle("ri-close-line");
+        bars.querySelector("i").classList.toggle("ri-menu-2-line");
         
     });
 
