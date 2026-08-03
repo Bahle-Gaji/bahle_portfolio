@@ -45,7 +45,7 @@ links.forEach(link => {
 
 // PORTFOLIO CARD ANIMATION
 
-const portfolioItems = document.querySelectorAll('.portfolio_img');
+const fadedElements = document.querySelectorAll('.fade-in');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -58,6 +58,6 @@ const observer = new IntersectionObserver((entries) => {
 } 
 );
 
-portfolioItems.forEach(item => {
+fadedElements.forEach(item => {
     observer.observe(item);
 })
