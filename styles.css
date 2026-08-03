@@ -31,6 +31,8 @@ header {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
 }
 
 .hero_bg {
@@ -39,7 +41,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center 20%;
     z-index: 0;
 }
 
@@ -53,10 +55,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 12%;
-    z-index: 999;
+    z-index: 1000;
 }
 
-nav,
 .hero_header {
     position: relative;
     z-index: 1;
@@ -115,9 +116,12 @@ section {
 }
 
 .menu {
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 1100;
 }
 
 .menu li a {
@@ -604,18 +608,25 @@ footer p span:hover {
         /* justify-content: space-between; */
     }
 
+    
     .bars {
         display: none;
     }
-
+    
     nav .social_icons {
         display: none;
     }
-
+    
     .hero_content {
         width: 100%;
+        height: 100vh;
     }
-
+    
+    .hero_bg {
+        width: 100%;
+        height: 100%;
+        object-position: 55% center;
+    }
     .about {
         flex-direction: column;
         text-align: center;
@@ -655,8 +666,13 @@ footer p span:hover {
 
 @media (max-width:768px) {
 
-    .hero_bg {
-        object-position: 75% center;
+    header {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        border-bottom-left-radius: 10% 5%;
+        border-bottom-right-radius: 10% 5%;
     }
 
     nav {
@@ -707,11 +723,19 @@ footer p span:hover {
 
     .hero_content {
         width: 100%;
+        height: 90vh;
         text-align: center;
         align-items: center;
     }
 
+    .hero_bg {
+        width: 100%;
+        height: 120%;
+        object-position: 55% center;
+    }
+
     .hero_content h1 {
+        text-align: center;
         font-size: 2rem;
     }
 
@@ -754,6 +778,60 @@ footer p span:hover {
 
     .logo a {
         font-size: 1.5rem;
+    }
+
+    .hero_content h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero_content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero_content p,
+    .about_content p,
+    .headings p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 140px;
+        font-size: 1rem;
+    }
+
+    .service_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service_card_det {
+        align-items: center;
+    }
+
+}
+
+@media (max-width:576px)  and (max-height: 800px){
+
+    nav {
+        height: 80px;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    .hero_content {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        text-align: left;
+        align-items: left;
+    }
+
+    .hero_bg {
+        width: 100%;
+        height: 120%;
+        object-position: 45%;
     }
 
     .hero_content h1 {
