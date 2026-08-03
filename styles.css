@@ -892,4 +892,11 @@ footer p span:hover {
         align-items: center;
     }
 
+}/* REDUCED MOTION USERS  */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 }
