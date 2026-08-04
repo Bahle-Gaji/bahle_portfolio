@@ -55,7 +55,7 @@
     </header>
 
     <!-- ABOUT -->
-    <section id="about" class="about fade-in" >
+    <section id="about" class="about fade-in">
         <div class="about_img">
             <!-- Upload my picture here -->
             <img src="Images/portrait-1.jpg" alt="">
@@ -178,17 +178,21 @@
                 your enquiry and contact details and I'll get back to you as soon as possible to discuss how I can help.
             </p>
         </div>
-        <div class="contact_inputs fade-in">
-            <div class="inputs">
-                <input type="text" placeholder="Your Name"></input>
-                <input type="email" placeholder="Your Email "></input>
-                <input type="number" placeholder="Your Phone Number"></input>
+        <form class="contact_form" action="https://formspree.io/f/mdennabd" method="POST">
+            <div class="contact_inputs">
+                <div class="inputs">
+                    <input type="text" name="name" placeholder="Your Name" required></input>
+                    <input type="email" name="email" placeholder="Your Email " required></input>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required></input>
+                </div>
+                <textarea name="message" placeholder="Type Your Message"></textarea>
             </div>
-            <textarea name="" id="" placeholder="Type Your Message"></textarea>
-        </div>
-        <div class="contact_btn fade-in">
-            <button>Submit Form</button>
-        </div>
+
+            <div class="contact_btn">
+                <button>Submit Form</button>
+            </div>
+        </form>
+
         <div class="address_det fade-in">
             <div class="address_box">
                 <i class="ri-smartphone-line"></i>
