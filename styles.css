@@ -859,7 +859,7 @@ footer p span:hover {
 
 }
 
-@media (max-width:576px) and (max-height: 800px) {
+/* @media (max-width:576px) and (max-height: 800px) {
 
     nav {
         height: 80px;
@@ -911,7 +911,7 @@ footer p span:hover {
         align-items: center;
     }
 
-}
+} */
 
 /* REDUCED MOTION USERS  */
 
