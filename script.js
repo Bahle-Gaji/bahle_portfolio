@@ -67,3 +67,59 @@ fadedElements.forEach(item => {
 // portfolioCards.forEach((card, index) => {
 //     card.style.transitionDelay = `${index * 250}ms`;
 // });
+
+// FORM SUBMISSION
+
+// const form = document.getElementById("contact-form");
+// const submitBtn = document.getElementById("submit-btn");
+// const status = document.getElementById("form-status");
+
+// form.addEventListener("submit", async (e) => {
+
+//     e.preventDefault();
+
+//     submitBtn.disabled = true;
+//     submitBtn.textContent = "Sending...";
+//     status.textContent = "";
+
+//     const formData = new FormData(form);
+
+//     try {
+
+//         const response = await fetch(form.action, {
+//             method: form.method,
+//             body: formData,
+//             headers: {
+//                 Accept: "application/json"
+//             }
+//         });
+
+//         if (response.ok) {
+
+//             status.textContent = "✔ Message sent successfully!";
+//             status.style.color = "#48d7bb";
+
+//             form.reset();
+
+//         } else {
+
+//             status.textContent = "Something went wrong. Please try again.";
+//             status.style.color = "red";
+
+//         }
+
+//     } catch (error) {
+
+//         status.textContent = "Network error. Please try again.";
+//         status.style.color = "red";
+
+//     }
+
+//     submitBtn.disabled = false;
+//     submitBtn.textContent = "Send Message";
+
+// });
+
+// setTimeout(() => {
+//     status.textContent = "";
+// }, 5000);
