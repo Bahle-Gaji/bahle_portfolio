@@ -439,6 +439,10 @@ section {
     gap: 10px;
 }
 
+.contact_form {
+    width: 100%;
+}
+
 .inputs {
     width: 50%;
     display: flex;
